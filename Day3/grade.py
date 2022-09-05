@@ -9,7 +9,7 @@
 
 score = float(input('请输入成绩：'))
 if score >= 90:
-    grade ='A'
+    grade = 'A'
 elif score >= 80:
     grade = 'B'
 elif score >= 70:
