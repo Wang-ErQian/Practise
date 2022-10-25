@@ -6,7 +6,7 @@ import turtle
 
 def draw_rectangle(x, y, width, height):
     """绘制矩形"""
-    turtle.goto(x,y)
+    turtle.goto(x, y)
     turtle.pencolor('red')
     turtle.fillcolor('red')
     turtle.begin_fill()
@@ -49,7 +49,7 @@ def main():
     width, height = 540, 360
     draw_rectangle(x, y, width, height)
     #画大星星
-    pice =22
+    pice = 22
     center_x, center_y = x + 5 * pice, y + height - pice * 5
     turtle.goto(center_x, center_y)
     turtle.left(90)
@@ -68,6 +68,7 @@ def main():
     turtle.ht()
     #显示绘图窗口
     turtle.mainloop()
+
 
 if __name__ == '__main__':
     main()

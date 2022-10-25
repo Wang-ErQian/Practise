@@ -4,10 +4,10 @@
 from turtle import *
 
 
-def nose(x,y):
+def nose(x, y):
     """画鼻子"""
     penup()
-    #将海龟移动到指定位置
+    #将海龟移动到指定的坐标
     goto(x, y)
     pendown()
     #设置海龟的方向(0-东、90-北、180-西、270-南)
@@ -15,7 +15,7 @@ def nose(x,y):
     begin_fill()
     a = 0.4
     for i in range(120):
-        if 0 <= i < 30 or 60 <= i <90:
+        if 0 <= i < 30 or 60 <= i < 90:
             a = a + 0.08
             #向左转3度
             left(3)
@@ -32,7 +32,7 @@ def nose(x,y):
     setheading(0)
     forward(10)
     pendown()
-    #设置画笔的颜色（红、绿、蓝）
+    # 设置画笔的颜色(红, 绿, 蓝)
     pencolor(255, 155, 192)
     setheading(10)
     begin_fill()
@@ -73,10 +73,10 @@ def head(x, y):
     setheading(-30)
     a = 0.4
     for i in range(60):
-        if 0 <= i <30 or 60 <= i < 90:
+        if 0 <= i < 30 or 60 <= i < 90:
             a = a + 0.08
-            lt(3)
-            fd(a)
+            lt(3) #向左转3度
+            fd(a) #向前走a的步长
         else:
             a = a - 0.08
             lt(3)
@@ -180,7 +180,7 @@ def mouth(x, y):
 def setting():
     """设置参数"""
     pensize(4)
-    #隐藏海龟
+    # 隐藏海龟
     hideturtle()
     colormode(255)
     color((255, 155, 192), "pink")
@@ -190,7 +190,7 @@ def setting():
 
 def main():
     """主函数"""
-    setting()
+    setting() 
     nose(-100, 100)
     head(-69, 167)
     ears(0, 160)

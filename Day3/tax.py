@@ -3,9 +3,9 @@
 说明：写这段代码时新的个人所得税计算方式还没有颁布
 """
 
-salay = float(input('本月收入：'))
-insurance = float(input('五险一金'))
-diff = salay - insurance - 6000
+salary = float(input('本月收入：'))
+insurance = float(input('五险一金：'))
+diff = salary - insurance - 3500
 if diff <= 0:
     rate = 0
     deduction = 0
@@ -32,4 +32,4 @@ else:
     deduction = 13505
 tax = abs(diff * rate - deduction)
 print('个人所得税：￥%.2f元' % tax)
-print('实际到手收入：￥%.2f元' % (diff + 3500 - tax))
+print('实际到手收入：￥%.2f元' % (diff + 3500 -tax))
